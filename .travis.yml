@@ -14,13 +14,7 @@ branches:
 install:
   - pip install -r requirements.txt
 
-addons:
-  sonarcloud:
-    organization: "hackydojo"
-    token: ${SONAR_TOKEN}
 script:
   - sh run_tests.sh
-  - sonar-scanner
-
 
 
